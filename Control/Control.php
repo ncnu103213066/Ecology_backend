@@ -10,7 +10,7 @@
             header('Location: ../Views/Result.php');
             break;
         case 'createEcology':
-            //檢查是否存在且有值
+            //檢查是否存在且有的值
             if(isset($_REQUEST['organismname']) && !empty($_REQUEST['organismname'])) {
                 createEcology($_REQUEST['organismname'], $_REQUEST['label'], $_REQUEST['family'], $_REQUEST['genus'], $_REQUEST['food'], $_REQUEST['season'], $_REQUEST['status'], $_REQUEST['habitat'], $_REQUEST['note']);
                 header('Location: ../Views/SearchView.php');
